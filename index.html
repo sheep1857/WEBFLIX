@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>卒業制作中間発表会 | ネンギン</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/"><img src="img/logo.png" alt="webflix" /></a>
+      </h1>
+      <nav class="pc-nav">
+        <ul>
+          <li><a href="#semi">ゼミの紹介</a></li>
+          <li><a href="#student">ゼミ生の紹介</a></li>
+          <li><a href="#work">作品の紹介</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="semi"></section>
+    <section id="student">
+      <h2>ゼミ生の紹介</h2>
+      <div class="splide" id="splide-student">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>作品の紹介</h2>
+      <div class="splide" id="st_pic">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/white.png" alt="ゼミ生写真　あとで差し替え" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="FAQ">
+      <h2 class="question">よくある質問</h2>
+      <ul class="accordion-area">
+        <li>
+          <section>
+            <h3 class="title">いつ開催されますか？</h3>
+            <div class="box">
+              <p>
+                2024年7月27日&lpar;土&rpar; 12:40~15:50です。<br />
+                進行状況により延長する可能性があります。
+              </p>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h3 class="title">対面での開催でしょうか？</h3>
+            <div class="box">
+              <p>
+                ZOOMを使用してオンラインでの開催となります。<a
+                  href="https://us02web.zoom.us/j/84950677770"
+                  >こちら</a
+                >をクリックしてご参加ください。
+              </p>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h3 class="title">参加にお金はかかりますか？</h3>
+            <div class="box">
+              <p>完全無料でご参加いただけます。</p>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </section>
+
+    <footer><small>&copy;nengin</small></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="splide.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#splide-student", {
+          type: "slide",
+          perPage: 5, // Number of images to show per view
+          gap: "1rem", // Gap between images
+          pagination: false,
+          arrows: true,
+          breakpoints: {
+            1200: {
+              perPage: 5,
+            },
+            992: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+          },
+        }).mount();
+
+        new Splide("#st_pic", {
+          type: "slide",
+          perPage: 5, // Number of images to show per view
+          gap: "1rem", // Gap between images
+          pagination: false,
+          arrows: true,
+          breakpoints: {
+            1200: {
+              perPage: 5,
+            },
+            992: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+          },
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
