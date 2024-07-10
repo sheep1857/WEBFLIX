@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
@@ -18,13 +18,19 @@
       <nav class="pc-nav">
         <ul>
           <li><a href="#semi">ゼミの紹介</a></li>
-          <li><a href="#student">ゼミ生の紹介</a></li>
-          <li><a href="#work">作品の紹介</a></li>
+          <li><a href="#student" class="scroll-link">ゼミ生の紹介</a></li>
+          <li><a href="#work" class="scroll-link">作品の紹介</a></li>
           <li><a href="#FAQ">FAQ</a></li>
         </ul>
       </nav>
     </header>
-    <section id="semi"></section>
+    <section id="semi">
+      <div class="main_title">
+        <h1>栗谷ゼミ✖小松ゼミ</h1>
+        <h3>楽しみにしてね！</h3>
+      </div>
+
+    </section>
     <section id="student">
       <h2>ゼミ生の紹介</h2>
       <div class="splide" id="splide-student">
@@ -163,6 +169,9 @@
             768: {
               perPage: 2,
             },
+            539: {
+              perPage: 1,
+            },
           },
         }).mount();
 
@@ -181,6 +190,9 @@
             },
             768: {
               perPage: 2,
+            },
+            539: {
+              perPage: 1,
             },
           },
         }).mount();

@@ -1,3 +1,16 @@
+$(document).ready(function() {
+  $('.scroll-link').on('click', function() {
+      var targetId = $(this).attr('href');
+      var targetElement = $(targetId);
+      var offset = targetElement.offset().top;
+      var scrollTo = offset - ($(window).height() / 2) + (targetElement.outerHeight() / 2);
+
+      $('html, body').animate({
+          scrollTop: scrollTo
+      });
+  });
+});
+
 //アコーディオンをクリックした時の動作
 $('.title').on('click', function() {//タイトル要素をクリックしたら
     var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
