@@ -1,4 +1,50 @@
 $(document).ready(function() {
+  function generateImages(container, count) {
+    for (let i = 0; i < count; i++) {
+        $(container).append('<li class="splide__slide"  data-bs-toggle="modal"><img src="img/white.png" alt="Image ' + (i + 1) + '" class="dynamic-image"></li>');
+    }
+}
+
+function initializeSplide(selector) {
+  new Splide(selector, {
+    type: "slide",
+    perPage: 5, // Number of images to show per view
+    gap: "1rem", // Gap between images
+    pagination: false,
+    arrows: true,
+    breakpoints: {
+      1200: {
+        perPage: 5,
+      },
+      992: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+      539: {
+        perPage: 1,
+      },
+    },
+  }).mount();
+}
+
+ // Generate images for both carousels
+ generateImages('#splide-student .splide__list', 9);
+ generateImages('#st_pic .splide__list', 9);
+
+ // Initialize Splide for both carousels
+ initializeSplide('#splide-student');
+ initializeSplide('#st_pic');
+
+ // Event listener for image click to show modal
+ $('.splide').on('click', '.dynamic-image', function() {
+  var src = $(this).attr('src');
+  $('#modalImage').attr('src', src);
+  var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+  modal.show();
+});
+
   $('.scroll-link').on('click', function() {
       var targetId = $(this).attr('href');
       var targetElement = $(targetId);

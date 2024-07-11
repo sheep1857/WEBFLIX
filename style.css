@@ -87,7 +87,12 @@ nav {
 }
 
 h2 {
-  margin-left: 20px;
+  margin: 1rem 2rem;
+  font-weight: bold;
+}
+
+#work {
+  margin-top: 2rem;
 }
 
 /* #student .st_pic,
@@ -104,6 +109,10 @@ h2 {
     margin-left: 30px;
  } */
 
+ .splide img {
+  cursor: pointer;
+ }
+
 .question {
   text-align: center;
 }
@@ -112,16 +121,15 @@ h2 {
   margin: 5rem 0;
   padding: 0 2rem;
 }
-#FAQ ul {
-  display: block;
-}
 
 /*アコーディオン全体*/
 .accordion-area {
+  display: block;
   list-style: none;
   max-width: 900px;
   margin: 0;
   padding: 0;
+  margin: auto;
 }
 
 .accordion-area li {
