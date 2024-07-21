@@ -52,11 +52,12 @@ nav {
 }
 
 #semi {
-  height: 65vh;
+  height: 70vh;
   position: relative;
-  background: url("https://lh3.googleusercontent.com/fife/ALs6j_F2jOOGkKqVtqC_BkACm7etqGKTxDL6ekRmjp-w6K8Js7qYbgatEV6CA5XNkTRYSuVInVuFVA_Xei63WTvL7gvKAv4QYh5W-O6_Em0hYmx50Tawmwo4kIj8p9Qy3WgGSdpNCRmpAkr49gbT62FpeP_FTS7hKgfQ8Gx8gTAq-9eSP7EUV5-0Kp7LYZjFVRYpFl29rr9A_PymilspaYws88188BasjkUiZl1KO5nWm2RZtPBh89fH__H3U-Sn_EExSMAWCI63ojNQ-WW3WKvRyPIuMcoc1vz2-yjuqDqavEvcwfz5yO0L7LVL-jXf_evOU1ZScVbyl3vubyV3Dcf1ugrLLwhDG3VIC2Xpg1ToH2ie5FJAGpW7SOIxs-lqL5HSEh6kebyQ71RQenPFve2h3-4ok8WJt4JA92kB99eC42KkzTZW0LGWpif1bXNX0NZT6adfyDt0960Q5aqHLG5705tvcVRdCoaDK4azwAncdXjEZn5xoZzqyjjyRp0R1HQIHKlcENI5oPeK625OfLaevdpCyoshHk2CThktVtyAOjXsPW7i_r-5rchrGSKEMJuRG48uBb_zbhVQhvIYskFcAn22TnFdgLdnHfVRGkY7aSKk2iYFSKD8hIziIIrkB9ceUkm9Jwxd3TuH0GoBLXZcQogauRGfKiNgDZ6Tp8yV78f_VuHLpJawaEiVu1GMTL31ePgCW7Iln7YQ_id2lA4zHYBA7fRTrLszHf7ySJi8Wa4mGFnB5rqV95je3kfK25vyhRnlkmIPZ2XIpoyFjsqm3fERXkf9ZoQvSMjnvhUV2_m693S8khE5sYszDGRd8VY98dyc7e1liK32GEwvhn3yAXhJkEmey0iqHSZAU2349MlHm4KF9lXzK-xu815FPz7OctAwjCW1lBg1lWUGMaeg-mi8-zJDBRmjsg_sdjge_UttOQZ_7SMZhDheIf9bUUxK0r31FiFOuM6GGy4W-rUJqVdvK1OCDdu1MrlclXeps7RAFLuedxNCSJiecPoR22w-4P5JJc6n5J5LA6zUiv28reFKhULBkoLJLK6t90jEqmZd2izdvSMyLsZPvZimISLxpS3Hw9S-cMg-NK8aX-ZbmeOmmtM7HDe6D1Z15NcDJ4HVx58y8PUVNy0BPE--Ks4TRi2tUMlOM-s7SgJNZ1CfE8XOQJlJQZopQTYrzEmJi4lnv-IWOYXM4yn6oVtTpixKFthBn0_VP62eF7isDD5NML5oaIUfy-e7d0Ju-pq5jSSJ4tUQfijfYThVvJlHWqdh9_Xktku3_hcOkSPqq94a1ApA0O0uFDEaKGP66m9izn5kl8PqHSAHC4xQQ0gzfp_LDPVRV7wyjYt3B08uiB_lWkK49RWqaoIzeQm63FFMsKhE8n5YjMJFbmhZuYJ_989K1riCz4frDLWnxCGhhEiaOwZ3tUDsGChJWWjIZMC9zL5w0tm5nBr0kNfPDohJoVFVcz_gledgw3dFjVBQR6Fj0RW3neJYcDOL_DQ_w_rprL3gQ9p-sSOP5TSDHwFqAP6ou_T3AzXoF8ioyn5uprZwU4PMeaJFuV52IroyijezriaCq5cdfBJ7quUMLiJCnl3Jv52xPNnJU0IoM7lJs0nXUoZ9gYZsjE9s-9bNSqpjPXUC-nAd2wZmXRCgbRW9VEEIazU9qbLAwkNyOupPO0D3fD6rwsVJO9Y=w1920-h919")
-    no-repeat center center;
-  background-size: cover;
+  overflow: hidden;
+  /* background: url("https://www.dhw.ac.jp/wp/wp-content/uploads/2023/07/b3b48cc8e695f04445acd3c20f1e9453.jpg")
+    no-repeat top center;
+  background-size: cover; */
 }
 
 #semi::before {
@@ -68,10 +69,48 @@ nav {
   bottom: 0;
   background: linear-gradient(
     to bottom,
-    rgba(7, 7, 7, 0.5) 50%,
+    rgba(7, 7, 7, 0.5) 30%,
     rgba(7, 7, 7, 1) 97%
   );
   z-index: 1;
+}
+
+#zemi-pic {
+  padding: 0;
+    height: 70vh;
+}
+#zemi-pic .splide__slide,  #zemi-pic .splide__track{
+  height: 100%;
+  position: relative;
+}
+#zemi-pic .image-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kuriya .image-container {
+  background-position: right top ;
+}
+.komatsu .image-container {
+  background-position: left top ;
+}
+.teacher-info {
+  position: absolute;
+  bottom: 25%;
+  max-width: 600px;
+  z-index: 10;
+  font-size: 1.2rem;
+  padding: 2rem 3rem;
+  background-color: #000;
+  border-radius: 20px;
+}
+.kuriya .teacher-info {
+  left: 10%;
+}
+.komatsu .teacher-info{
+right: 10%;
 }
 
 .main_title {
@@ -183,14 +222,16 @@ h2 {
 
 /*アコーディオンで現れるエリア*/
 .box {
-  display: none; /*はじめは非表示*/
+  /* display: none; */
   background: #8a8a8a;
   margin: 0 3% 3% 3%;
   padding: 3%;
 }
 
 footer {
-  background-color: #9c9c9c;
+  /* background-color: #e50914; */
+  background-color: #000;
+  border-top: solid 1px #cfcfcf;
   height: 50px;
   text-align: center;
   padding-top: 14px;
@@ -204,6 +245,8 @@ footer {
 .splide__slide img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .splide__arrow {
@@ -225,14 +268,70 @@ footer {
   background: #8d8d8d7d;
 }
 
+.student-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.student-wrapper span {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+.student-image {
+  max-width: 50px;
+}
+.student-image img {
+  width: 100%;
+  height: auto;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.coming-soon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+h6 {
+  font-weight: bold;
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   .main_title h1 {
     font-size: 4rem;
   }
+  .teacher-info {
+    max-width: 300px;
+    padding: 1rem 2rem;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .main_title h1 {
     font-size: 3rem;
+  }
+  .teacher-info {
+    display: none;
+  }
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .teacher-info {
+    top: 3rem; /* Reset the top positioning */
+    bottom: auto; /* Position the element at the bottom */
   }
 }
